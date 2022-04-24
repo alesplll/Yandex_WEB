@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="style">
+{% if form.errors %}
+  <p>Что-то не так!</p>
+{% endif %}
+
+
+<form method="post" action="{% url 'login' %}">
+{% csrf_token %}
+
+<table>
+
+<tr>
+  <td><b>Имя пользователя:</b></td>
+  <td>{{ form.username }}</td>
+</tr>
+
+<tr>
+  <td><b>Пароль:</b></td>
+  <td>{{ form.password }}</td>
+</tr>
+</table>
+
+<input type="submit" value="Войти" />
+<input type="hidden" name="next" value="{{ next }}" />
+
+</form>
+
+<p><a href="{% url 'password_reset' %}">Забыли пароль?</a></p>
+</div>
+{% endblock %}

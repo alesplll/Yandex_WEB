@@ -1,0 +1,244 @@
+sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+.style {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #bebebe;
+    border-width: 1px;
+    background-color:#f8f8f89a;
+    margin: 15px;
+    padding: 25px;
+}
+
+.letters_sb {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+    color: #9900FF;
+    cursor: pointer;
+}
+
+.my_class {font-style: bold;
+           text-align: center;
+           font-size: 60px;}
+
+.questionary {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #bebebe;
+    border-width: 1px;
+    background-color:#f8f8f89a;
+    margin: 15px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+
+.next_button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #E8EFF1;
+    text-shadow: -2px -1px #F17555;
+    background: #be73e0;
+    transition: .3s;
+}
+
+ .button_field { 
+     margin-left: 0px;
+     margin-top: 15px;
+ }
+
+.tag {
+      background-color: #bd73e091;
+      border-radius: 10px;
+      margin-right: 8px;
+      padding: 7px;
+      font-size: 17px;
+}
+
+
+.jsdata {display: none;}
+
+
+.diagram_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7%;
+}
+
+.legend_cont {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.legend {width:30px;
+         height:30px;
+         font-size: 20px;
+         font-family: sans-serif;}
+
+
+.legend1_cont {font-size: 20px;
+               font-family: sans-serif;
+               font-style: italic;
+               font-weight: 400;
+}
+.h1_class {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Verdana;
+    text-align: center;
+}
+.h1_questionary {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Verdana;
+    text-align:left;
+}
+.h2_questionary {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.h2_class {
+    font-weight: 800;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.h2_rc {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif
+}
+.rc_location{
+    margin-top: 0px;
+}
+.h3_questionary {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.h3_class {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.body_class {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-indent: 25px;
+    line-height: 30px;
+}
+.dl_class {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 50px;
+    line-height: 30px;
+}
+.ol_class {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 90px;
+    line-height: 30px;
+}
+hr {
+    margin: 20px 0;
+	padding: 0;
+	height: 20px;
+	border: none;
+	background: linear-gradient(45deg, rgba(57, 42, 190, 0.473), rgba(170, 37, 141, 0.466));
+}
+.articles {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #bebebe;
+    border-width: 1px;
+    background-color:#f8f8f89a;
+    margin: 15px;
+    padding-bottom: 25px;
+}
+.img {
+    max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+.table_class{
+    height: 100px;
+}
+.container {display: flex;
+            background-image: url(../img/background3.png);
+            
+            flex-direction: row;
+            margin: 0px;
+            width: 100%;
+}
+
+.first-col {
+            width: 15%;
+            }
+
+.second-col {
+            width: 65%;
+            }
+
+.third-col {
+            width: 20%;
+            }
+
+.link1 {display: flex;
+        flex-direction: row;}
+
+.container-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.icon {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.reg_cont {
+    width: fit-content;
+    margin-left: 200px;
+    margin-top: 300px;
+    margin-bottom: 200px;
+}

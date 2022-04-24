@@ -1,0 +1,90 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="jsdata">
+    {% for elem in stat_data %}
+    <p id="{{ elem.0 }}">{{ elem.1 }}</p>
+    {% endfor %}
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<h1 class="h1_class">Статистика анкетирования</h1>
+<div class="style">
+        <h2 class="h2_class">Демографические данные анкетируемых</h2>
+        <h3 class="h3_class">Распределение по полу</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="genderCanvas" class="diagram"></canvas>
+            <div class="legend_cont" id="genderLegend"></div>
+        </div>
+        <h3 class="h3_class">Распределение по возрасту</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="ageCanvas" class="diagram"></canvas>
+            <div class="legend_cont" id="ageLegend"></div>
+        </div>
+        <h3 class="h3_class">Распределение по роду занятости</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="jobCanvas" class="diagram"></canvas>
+            <div class="legend_cont" id="jobLegend"></div>
+        </div>
+</div>
+<div class="style">
+        <h2 class="h2_class">Данные о частоте употребления кофеина из различных источников</h2>
+        <h3 class="h3_class">Растворимый кофе</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="caffe1Canvas" class="diagram"></canvas>
+            <div class="legend_cont" id="caffe1Legend"></div>
+        </div>
+        <h3 class="h3_class">Зерновой кофе</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="caffe2Canvas" class="diagram"></canvas>
+            <div class="legend_cont" id="caffe2Legend"></div>
+        </div>
+        <h3 class="h3_class">Чай</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="teaCanvas" class="diagram"></canvas>
+            <div class="legend_cont" id="teaLegend"></div>
+        </div>
+        <h3 class="h3_class">Энергетические напитки</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="energydrinksCanvas" class="diagram"></canvas>
+            <div class="legend_cont" id="energydrinksLegend"></div>
+        </div>
+        <h3 class="h3_class">Кофеинсодержащие препараты и БАДы</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="pillsCanvas" class="diagram"></canvas>
+            <div class="legend_cont" id="pillsLegend"></div>
+        </div>
+</div>
+<div class="style">
+        <h2 class="h2_class">Данные о специфике употребления кофеина</h2>
+        <h3 class="h3_class">Употребление кофеина, чтобы лучше справиться с учебными задачами</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="spec1Canvas" class="diagram"></canvas>
+            <div class="legend_cont" id="spec1Legend"></div>
+        </div>
+        <h3 class="h3_class">Употребление кофеина для пробуждения утром</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="spec2Canvas" class="diagram"></canvas>
+            <div class="legend_cont" id="spec2Legend"></div>
+        </div>
+        <h3 class="h3_class">Увеличение необходимой дозировки кофеина</h3>
+        <div class="diagram_cont" align="center">
+            <canvas id="spec3Canvas" class="diagram"></canvas>
+            <div class="legend_cont" id="spec3Legend"></div>
+        </div>
+</div>
+<div class="style">
+    <h2 class="h2_class">Данные о наблюдаемых симптомах кофеиновой зависимости</h2>
+<div class="diagram_cont" align="center">
+    <canvas id="barCanvas" class="diagram"></canvas>
+</div>
+</div>
+ <div class="popup" onmouseover="myFunction()">Сюда можно навести!
+  <span class="popuptext" id="myPopup">Контент
+
+</span>
+</div>
+{% load static %}
+<script type="text/javascript" src="{% static 'scripts/statistic_v2.js' %}"></script>
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div class="articles">
+<h1 class="h1_class" >Домашняя страница</h1>
+
+<img src="../static/img/home_page_img.jpg" alt="ice coffe" class="img">
+
+<div>
+  <p class="body_class">
+    <br>Здравствуйте! <br> Авторы проекта: <a href="https://gesha.carrd.co/">Ушкова Ангелина</a> и Бершова Мария. Мы ученицы 10 профильного медицинского класса школы МБОУ "Лицей №1". Данный сайт - наш проект электронный образовательный ресурс: "Кофеин и здоровый образ жизни". Он создан для того, чтобы популяризировать информацию о кофеине. На сайте представлена теоретическая информация в качестве статей. Также, вы можете зарегистрироваться и пройти анкетирование. 
+  </p>
+</div>
+
+<h2 class="h2_class">Динамическая информация:</h2>
+
+  <p class="body_class">У нас уже есть:</p>
+  <ul class="ol_class">
+    <li><strong>Пользователи:</strong> {{ num_users }}</li>
+    <li><strong><a href="{% url 'articles' %}">Статьи:</a></strong> {{ num_articles }}</li>
+  </ul>
+</div>
+{% endblock %}
+
+{% block right-col %}
+<div class="rc_location">
+<h2 class="h2_rc">Интересные факты о кофеине</h2>
+<p></p>
+</div>
+{% endblock %}
